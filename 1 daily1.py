@@ -2,7 +2,7 @@
 #-----------------------------
 #Data Structures
 #List - ordered collection of items, mutable(changeable) : [square ]
-list1 = [1,2,3,4,5,'a','Dhiraj',"Upadhyaya",True]  #list type of object with data
+list1 = [1,2,3,4,5,'a','Ashwin',"Parkhi",True]  #list type of object with data
 list1  #print when through spyder
 type(list1)  #type of object
 print(list1)  #print when running complete file
@@ -60,6 +60,7 @@ fd['brand'] = 'HYUNDIA'   #immutatble
 #Set - ordered collection of simple items, immutable
 set1 = set(['india', 'pakistan', 'england', 'australia','india'])
 set1
+
 type(set1)
 
 set2 = {'INDIA','PAKISTAN',  "INDIA"}  #better way
@@ -97,6 +98,7 @@ frozenset2 #keys of dictionary made as frozen set
 str1 = 'Python Programming'
 type(str1)
 print(str1)
+str1.upper()
 str2="Yash"
 str2.lower()
 dir(str)
@@ -116,7 +118,9 @@ for i in list1:
 
   
 for i in list1:    print(i , end ='\t')
-print?  #help
+help(print)  #help
+
+
 for i in list2:    print(i, 'DU' , sep='-' , end ='xxx')
 #a-DU-xxx ; i+sep+end
 for i in list1:    print(i , 'HHHE', sep=' X ' , end ='\t')
@@ -163,6 +167,7 @@ numpy.array([list1])
 import numpy as np #np is alias
 np1 = np.arange(1,10)
 np1
+help(numpy.array)
 
 x=np.arange(start=1,stop=1000000,step=2)
 len(x)
