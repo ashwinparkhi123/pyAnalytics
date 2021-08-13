@@ -52,18 +52,20 @@ accuracy_score(y_true=y_test, y_pred=ypred1)
 #new data
 newData = X.sample(4)
 clsModel.predict(newData)
-
-
-
+newData
+X_train
+X_train.query('Variance<0.2')
 
 #visualise 
-#pip install graphviz
+#!pip install graphviz
 from graphviz import Source
 from sklearn import tree
 tree.plot_tree(decision_tree=clsModel)
 tree.plot_tree(decision_tree=clsModel, feature_names=['Var', 'Skew', ' Kur',  'Ent'], class_names=['Org','Fake'], fontsize=12)
 #not a good way to draw graphs.. other methods to be experimented
 tree.plot_tree(decision_tree=clsModel, max_depth=2, feature_names=['Var', 'Skew', ' Kur',  'Ent'], class_names=['Org','Fake'], fontsize=12)
+
+
 
 Source(tree.export_graphviz(clsModel))
 Source(tree.export_graphviz(clsModel, max_depth=3))
