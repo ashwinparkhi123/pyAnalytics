@@ -80,9 +80,6 @@ x_new
 y_new = model.predict(x_new)
 y_new
 
-#pause--- break
-
-
 #%% Stats Models
 
 import numpy as np
